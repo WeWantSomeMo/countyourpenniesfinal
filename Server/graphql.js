@@ -3,7 +3,7 @@ var {graphqlHTTP} = require('express-graphql');
 var { buildSchema } = require('graphql');
 // import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
-const { typeDefs, resolvers } = require('./schemas');
+const { typeDefs, resolvers } = require('./schema');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
