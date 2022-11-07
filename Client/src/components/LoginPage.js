@@ -6,9 +6,10 @@ import {
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 function LoginPage() {
   return (
+  <>
+    <h2 className='p-3'>Welcome to Count Your Pennies! Please log in!</h2>
     <Container>
       <Row className="justify-content-md-center">
         <Col md={5} className="border">
@@ -24,8 +25,8 @@ function LoginPage() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Link to='/allgoals'>
-                <button>Submit</button>
+                <Link to='/allgoals/true'>
+                  <button>Submit</button>
                 </Link>
                 <br/>
                 <p>If you don't have an account, please <Link to="/Signup">Sign up</Link>.</p>
@@ -33,7 +34,7 @@ function LoginPage() {
         </Col>
       </Row>
     </Container>
+  </>
   );
 }
-
 export default LoginPage;
