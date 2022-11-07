@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
+import './dashboard.css'
 
 function DashboardPage(){
   // let {logout} = useParams();
@@ -15,36 +16,43 @@ function DashboardPage(){
         <button>Submit New Goal</button>
       </Link>
 
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Goal Name</th>
-            <th>$ Amount Goal</th>
-            <th>Scheduled Savings</th>
-            <th>Time Estimate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </Table>
+
+      <div className="container">
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Goal Name</th>
+              <th>$ Amount Goal</th>
+              <th>Scheduled Savings</th>
+              <th>Time Estimate</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td className="name"></td>
+              <td className="amount"></td>
+              <td className="schedule"></td>
+              <td className="time"></td>        <button className="delete">Delete</button>
+            </tr>
+
+            <tr>
+              <td className="name"></td>
+              <td className="amount"></td>
+              <td className="schedule"></td>
+              <td className="time"></td>         <button className="delete">Delete</button>
+            </tr>
+
+            <tr>
+              <td className="name"></td>
+              <td className="amount"></td>
+              <td className="schedule"></td>
+              <td className="time"></td>         <button className="delete">Delete</button>
+            </tr>
+
+          </tbody>
+        </Table>
+      </div>
   </>
 )}
 

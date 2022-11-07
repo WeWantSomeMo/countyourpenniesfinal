@@ -1,0 +1,66 @@
+table {
+    border: 1px solid white;
+    width: 800px;
+    height: 300px;
+  }
+
+    
+  th {
+    border: 1px solid white;
+  }
+    
+  .name {
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px
+  }
+  
+  .amount {
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px
+  }
+
+  .schedule {
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px
+  }
+
+  .time {
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px
+  }
+
+  thead {
+    border: 1px solid white;
+  }
+
+  tbody > tr {
+    width: 10em;
+    height: 5ex;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+
+  tbody > tr:hover {
+    background-color: gray;
+}
+
+button {
+  display: flex;
+}
+
+.delete {
+  display: flex;
+  
+}
